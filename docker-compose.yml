@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  pyscratch:
+    build: .
+    volumes:
+        - ./:/usr/src/app
+    command: nodemon --exec python /usr/src/app/main.py
